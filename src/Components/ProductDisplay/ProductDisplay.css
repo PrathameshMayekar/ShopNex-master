@@ -1,0 +1,193 @@
+.productdisplay {
+    display: flex;
+    margin: 0 100px;
+    flex-wrap: wrap; /* Ensure the display is responsive */
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 17px;
+    flex: 1; /* Allows the left section to grow */
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productdisplay-img-list img {
+    height: 163px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+.productdisplay-main-img {
+    width: 586px;
+    height: 700px;
+    object-fit: cover; /* Ensures the main image maintains aspect ratio */
+}
+
+.productdisplay-right {
+    margin: 0 70px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows the right section to grow */
+}
+
+.productdisplay-right h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.ph1_light {
+    color: white;
+}
+
+.productdisplay-right-stars {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 5px;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 40px 0;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    color: #ff4141;
+}
+
+.productdisplay-right-size h1 {
+    margin-top: 55px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ph1_dark {
+    margin-bottom: 0;
+}
+
+.productdisplay-right-sizes {
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.productdisplay-right-sizes div {
+    padding: 18px 24px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.productdisplay-right-sizes div.selected {
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
+}
+
+.productdisplay-right button {
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    background: #ff4141;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.productdisplay-right button:hover {
+    background: #e03e3e; /* Darker shade on hover */
+}
+
+.productdisplay-right-quantity {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+
+.productdisplay-right-quantity h1 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin: 0 10px;
+}
+
+.productdisplay-right-quantity input {
+    width: 48px;
+    padding: 6px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-right: 3px;
+}
+
+/* Optional: Style the input when focused */
+.productdisplay-right-quantity input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Optional: Style the input when there is an error */
+.productdisplay-right-quantity input:invalid {
+    border-color: #dc3545;
+}
+
+.pdiv_light {
+    color: white;
+}
+
+/* Additional styles for light and dark themes */
+.pdiv_dark {
+    color: #1c1c1c; /* Text color for dark theme */
+}
+
+.quantity-selector {
+    display: flex;
+    margin-top: 1px; /* Adjust spacing as needed */
+}
+
+.quantity-selector button {
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    width: 30px; /* Set a fixed width for buttons */
+    height: 30px; /* Set a fixed height for buttons */
+    font-size: 15px; /* Adjust button text size */
+    margin: 0 5px; /* Add some space between buttons and input */
+    background: #dc3545; /* Optional: Add a background color */
+    border: none; /* Optional: Remove border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background 0.2s; /* Optional: Add a hover effect */
+}
+
+.quantity-selector button:hover {
+    background: #dc3545; /* Optional: Change background on hover */
+}
+
+.quantity-selector input {
+    width: 50px; /* Set a fixed width for input */
+    text-align: center; /* Center the text in the input */
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    padding: 4px; /* Optional: Add padding for better spacing */
+}

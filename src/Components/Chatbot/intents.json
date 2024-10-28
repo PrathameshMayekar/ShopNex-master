@@ -1,0 +1,262 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "Greetings",
+          "Hi there",
+          "What's up?",
+          "Howdy",
+          "Yo",
+          "How are you?",
+          "What's new?",
+          "How's it going?",
+          "What's good?",
+          "Hiya",
+          "Salutations",
+          "Welcome",
+          "Good day",
+          "Good to see you",
+          "Long time no see",
+          "How have you been?",
+          "Nice to meet you"
+        ],
+        "responses": [
+          "Hello! How can I assist you?",
+          "Hi there! What can I do for you?",
+          "Good to see you! How can I help?",
+          "Hey! How can I help you today?",
+          "Greetings! What can I assist you with?",
+          "Welcome! How may I help you?",
+          "Nice to see you! What do you need help with?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Farewell",
+          "Catch you later",
+          "I'm off",
+          "Take care",
+          "Have a good day",
+          "Talk later",
+          "Until next time",
+          "Adios",
+          "Later",
+          "Ciao",
+          "Peace out"
+        ],
+        "responses": [
+          "See you later!",
+          "Goodbye! Have a nice day!",
+          "Take care! Talk to you soon!",
+          "Bye! Come back again soon.",
+          "Until next time!",
+          "Farewell! Stay safe!",
+          "Catch you later!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "I appreciate it",
+          "Thanks a lot",
+          "Thanks for your help",
+          "You're awesome",
+          "Thank you very much",
+          "Thanks for everything",
+          "I owe you one",
+          "Thanks for your support",
+          "Cheers",
+          "Many thanks",
+          "Thanks, I really needed that"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Anytime!",
+          "My pleasure!",
+          "Happy to help!",
+          "No problem!",
+          "Glad I could assist!",
+          "You're very welcome!"
+        ]
+      },
+      {
+        "tag": "noanswer",
+        "patterns": [],
+        "responses": [
+          "Sorry, I didn't understand that.",
+          "Can you rephrase that?",
+          "I didn't quite catch that.",
+          "Can you say that again?",
+          "I'm not sure I understand.",
+          "Sorry, I didn't get that.",
+          "Could you clarify that for me?"
+        ]
+      },
+      {
+        "tag": "options",
+        "patterns": [
+          "What can you do?",
+          "How can you help me?",
+          "What are your capabilities?",
+          "What can I ask you?",
+          "Tell me what you can do",
+          "What support do you offer?",
+          "How can I utilize you?",
+          "What services do you provide?",
+          "What assistance can I get?",
+          "What are your features?"
+        ],
+        "responses": [
+          "I can assist you with information about our products, help you with order inquiries, and answer general questions.",
+          "I'm here to provide support with your queries, just ask away!",
+          "You can ask me anything related to our products and services.",
+          "I can help you with product details, order status, and general inquiries.",
+          "I'm your virtual assistant! Just ask me anything, and I'll do my best to help.",
+          "I can assist you in navigating our store and finding the information you need."
+        ]
+      },
+      {
+        "tag": "product_info",
+        "patterns": [
+          "Tell me about your products",
+          "What products do you have?",
+          "Can you give me details about your products?",
+          "What are your best-selling products?",
+          "What new products do you offer?",
+          "Show me your product range",
+          "What types of products do you sell?",
+          "Can you list your products?",
+          "What can you tell me about your inventory?",
+          "Do you have any special products?"
+        ],
+        "responses": [
+          "We offer a wide range of products including electronics, home goods, and apparel.",
+          "Our best-selling products include smart devices, kitchen appliances, and fitness gear.",
+          "We have a variety of new products arriving every week! Check our website for the latest.",
+          "You can find everything from gadgets to clothing in our inventory.",
+          "Our product range includes high-quality items designed to meet your needs."
+        ]
+      },
+      {
+        "tag": "order_status",
+        "patterns": [
+          "Where is my order?",
+          "Track my order",
+          "What is the status of my order?",
+          "Can you give me my order status?",
+          "How can I check my order?",
+          "I want to know about my order",
+          "What happened to my order?",
+          "Is my order shipped?",
+          "When will my order arrive?",
+          "Can you tell me if my order is on the way?"
+        ],
+        "responses": [
+          "You can track your order on the 'My Orders' page.",
+          "Please provide your order number to check the status.",
+          "Once your order is shipped, you will receive a tracking number via email.",
+          "Your order is currently being processed. You will be updated shortly.",
+          "If you need immediate assistance with your order, please contact support."
+        ]
+      },
+      {
+        "tag": "payment_info",
+        "patterns": [
+          "What payment methods do you accept?",
+          "Can I pay with credit card?",
+          "Do you accept PayPal?",
+          "What payment options are available?",
+          "How can I pay for my order?",
+          "Is cash on delivery an option?",
+          "Can I pay in installments?",
+          "What are your payment policies?",
+          "Are there any fees for payment?",
+          "Can I use a gift card?"
+        ],
+        "responses": [
+          "We accept all major credit cards, PayPal, and gift cards.",
+          "You can pay using credit card, debit card, or PayPal.",
+          "Cash on delivery is available in select regions.",
+          "We offer secure payment options for your convenience.",
+          "Payment must be completed before your order is processed."
+        ]
+      },
+      {
+        "tag": "shipping_info",
+        "patterns": [
+          "What is your shipping policy?",
+          "Do you ship internationally?",
+          "How long does shipping take?",
+          "What shipping options do you offer?",
+          "Can I track my shipment?",
+          "What are your shipping rates?",
+          "How is shipping calculated?",
+          "Do you offer free shipping?",
+          "When will my order ship?",
+          "Can I change my shipping address?"
+        ],
+        "responses": [
+          "We offer free shipping on orders over $50.",
+          "Yes, we ship internationally. Shipping fees may apply.",
+          "Shipping typically takes 3-5 business days within the U.S.",
+          "You can track your shipment using the tracking number sent to your email.",
+          "Shipping rates are calculated based on your location and order size."
+        ]
+      },
+      {
+        "tag": "return_policy",
+        "patterns": [
+          "What is your return policy?",
+          "Can I return an item?",
+          "How do I return a product?",
+          "What are the conditions for returns?",
+          "Do you offer exchanges?",
+          "Can I get a refund?",
+          "What if my item is defective?",
+          "How long do I have to return an item?",
+          "What is the process for returns?",
+          "Are there any return fees?"
+        ],
+        "responses": [
+          "Our return policy allows returns within 30 days of purchase.",
+          "If you're not satisfied with your product, you can return it for a refund or exchange.",
+          "Returns are free for items that are defective or damaged.",
+          "Please contact our customer service for return instructions.",
+          "Refunds are processed within 5-7 business days after receiving your returned item."
+        ]
+      },
+      {
+        "tag": "customer_support",
+        "patterns": [
+          "How can I contact customer support?",
+          "What are your support hours?",
+          "Is support available 24/7?",
+          "Can I get help with my account?",
+          "Where can I find support?",
+          "How do I report a problem?",
+          "What if I need assistance?",
+          "How can I get in touch with you?",
+          "Do you have a support email?",
+          "Can I chat with a representative?"
+        ],
+        "responses": [
+          "Customer support is available 24/7 via chat and email.",
+          "You can reach us at support@example.com for any inquiries.",
+          "For urgent issues, please use the live chat feature on our website.",
+          "Our support team is here to help you with any questions you have.",
+          "You can find help in the 'Contact Us' section of our website."
+        ]
+      }
+    ]
+  }
+  
