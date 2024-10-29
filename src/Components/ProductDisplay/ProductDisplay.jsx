@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDisplay = (props) => {
   const { product } = props;
-  const { addToCart } = useContext(ShopContext);
+  const { addToCart, theme } = useContext(ShopContext);
 
   const [selectedSize, setSelectedSize] = useState("S"); // State for selected size
   const [selectedQuantity, setSelectedQuantity] = useState(1); // State for selected quantity
@@ -17,17 +17,18 @@ const ProductDisplay = (props) => {
     setSelectedSize(size);
   };
 
-  const increaseQuantity = () => setSelectedQuantity(prev => prev + 1);
+  const increaseQuantity = () => {
+    setSelectedQuantity(prev => (prev < 10 ? prev + 1 : prev));
+  };
+
   const decreaseQuantity = () => {
     if (selectedQuantity > 1) setSelectedQuantity(prev => prev - 1);
   };
 
   const handleQuantityChange = (value) => {
-    const quantity = Math.max(1, parseInt(value)); // Ensure quantity is at least 1
+    const quantity = Math.max(1, Math.min(10, parseInt(value))); // Restrict quantity between 1 and 10
     setSelectedQuantity(quantity);
   };
-
-  const { theme } = useContext(ShopContext);
 
   return (
     <div className="productdisplay">
@@ -87,11 +88,15 @@ const ProductDisplay = (props) => {
             <input
               type="number"
               min="1"
+              max="10" // Enforce maximum of 10 in the input
               value={selectedQuantity}
               onChange={(e) => handleQuantityChange(e.target.value)}
             />
-            <button onClick={increaseQuantity}>+</button>
+            <button onClick={increaseQuantity} disabled={selectedQuantity === 10}>+</button>
           </div>
+          {selectedQuantity === 10 && (
+            <p className="max-quantity-note">Max 10 items</p>
+          )}
         </div>
         <button
           onClick={() => {
@@ -101,7 +106,7 @@ const ProductDisplay = (props) => {
               closeButton: false,
             });
           }}
-        > 
+        >
           ADD TO CART
         </button>
         <ToastContainer toastStyle={{ fontWeight: "bold", marginTop: "68px" }} />
